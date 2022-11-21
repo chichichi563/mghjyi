@@ -1,5 +1,18 @@
 input.onButtonPressed(Button.A, function () {
     DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eAllMotor, MyEnumDir.eForward, 255)
+    music.playMelody("C5 B A G F E D C ", 120)
+    for (let index = 0; index < 100; index++) {
+        music.playTone(370, music.beat(BeatFraction.Whole))
+        music.playTone(440, music.beat(BeatFraction.Whole))
+        music.playTone(554, music.beat(BeatFraction.Whole))
+        music.playTone(440, music.beat(BeatFraction.Whole))
+        music.playTone(370, music.beat(BeatFraction.Whole))
+        music.playTone(294, music.beat(BeatFraction.Half))
+        music.playTone(294, music.beat(BeatFraction.Half))
+        music.playTone(294, music.beat(BeatFraction.Whole))
+        music.playTone(277, music.beat(BeatFraction.Whole))
+        music.playTone(294, music.beat(BeatFraction.Whole))
+    }
 })
 for (let index = 0; index < 10; index++) {
     basic.showString("PRESS A ")
