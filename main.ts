@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eAllMotor, MyEnumDir.eForward, 255)
+    DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eAllMotor, MyEnumDir.eForward, 225 * 10)
     music.playMelody("C5 B A G F E D C ", 120)
     for (let index = 0; index < 100; index++) {
         music.playTone(370, music.beat(BeatFraction.Whole))
